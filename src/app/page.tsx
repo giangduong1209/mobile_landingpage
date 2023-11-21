@@ -24,39 +24,45 @@ export default function Home() {
         </div>
       </header>
       <main>
-        <h1 className="text-4xl text-center font-bold md:text-7xl mb-16">
-          Gắn gói trực tiếp trên <br />{" "}
-          <span className="text-blue-700 font-semibold">
-            Sim Mobifone đang dùng
-          </span>
-        </h1>
+        <div className="mb-4 px-4 2xl:px-96">
+          <h1 className="text-4xl text-center font-bold md:text-7xl bg-yellow-400 p-2 rounded-md shadow-lg">
+            Gắn gói trực tiếp trên <br />{" "}
+            <span className="text-blue-700 font-semibold">
+              Sim Mobifone đang dùng
+            </span>
+          </h1>
+        </div>
         {/* Feature */}
         <div className="flex flex-col justify-center items-center px-2 gap-5">
           <div className="w-full flex justify-center gap-x-5">
             <div className="flex w-[250px] md:w-[300px] items-center">
               <CheckCircle className="text-green-600 mr-2 md:w-14 h-20" />
-              <span className="text-md md:text-lg">
-                Không cần <br /> mua sim 4G.
+              <span className="text-red-600 text-md md:text-lg uppercase">
+                Không cần <br />
+                <span className="text-blue-600">mua sim 4G</span>
               </span>
             </div>
             <div className="flex w-[250px] md:w-[300px] items-center">
               <CheckCircle className="text-green-600 mr-2 md:w-14 h-20" />
-              <span className="text-md md:text-lg">
-                Gắn trực tiếp trên <br /> sim đang dùng.
+              <span className="text-red-600 uppercase text-md md:text-lg">
+                Gắn trực tiếp trên <br />{" "}
+                <span className="text-blue-600">sim đang dùng</span>
               </span>
             </div>
           </div>
           <div className="w-full flex justify-center gap-x-5">
             <div className="flex w-[250px] md:w-[300px] items-center">
               <CheckCircle className="text-green-600 mr-2 md:w-14 h-20" />
-              <span className="text-md md:text-lg">
-                Nhanh chóng <br /> (chỉ 5 phút gắn xong).
+              <span className="text-red-600 uppercase text-md md:text-lg">
+                Nhanh chóng <br />{" "}
+                <span className="text-blue-600">(chỉ 5 phút gắn xong)</span>
               </span>
             </div>
             <div className="flex w-[250px] md:w-[300px] items-center">
               <CheckCircle className="text-green-600 mr-2 md:w-14 h-20" />
-              <span className="text-md md:text-lg">
-                Dễ dàng <br /> (90% sim mobi gắn được)
+              <span className="text-red-600 uppercase text-md md:text-lg">
+                Dễ dàng <br />{" "}
+                <span className="text-blue-600">(90% sim mobi gắn được)</span>
               </span>
             </div>
           </div>
@@ -125,10 +131,26 @@ export default function Home() {
       <footer>
         <h2 className="text-center font-bold text-5xl">Về chúng tôi</h2>
         <p className="text-center my-5">
-          Tùng Luke chuyên cung cấp dịch vụ viễn thông Viettel, Vinaphone,
+          ZinZin Shop chuyên cung cấp dịch vụ viễn thông Viettel, Vinaphone,
           Mobifone.
           <br /> Với phương châm số 1 về bảo hành, chúng tôi mong muốn mang lại
           dịch vụ chất lượng, uy tín nhất.
+        </p>
+        <Image
+          src="/banner_footer.jpg"
+          alt="banner footer"
+          width={1198}
+          height={800}
+          className="mx-auto"
+        />
+        <p className="ml-2 text-center">
+          Địa chỉ:{" "}
+          <span className="font-bold">
+            Số 9 ngõ 79 Mễ Trì Thượng, Nam Từ Liêm, Hà Nội
+          </span>
+        </p>
+        <p className="ml-2 text-center">
+          Hotline/zalo:<span className="font-bold"> 0877.358.999</span>
         </p>
       </footer>
     </>

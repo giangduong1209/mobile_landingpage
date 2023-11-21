@@ -14,16 +14,18 @@ const CountdownUi = () => {
     } else {
       // Render a countdown
       return (
-        <span>
-          {hours}:{minutes}:{seconds}
+        <span className="text-xl">
+          <span className="bg-black p-2 rounded-md">{hours}</span> :{" "}
+          <span className="bg-black p-2 rounded-md">{minutes}</span> :{" "}
+          <span className="bg-black p-2 rounded-md">{seconds}</span>
         </span>
       );
     }
   };
 
   return (
-    <div className="absolute bottom-[27%] right-0 text-sm md:bottom-[15%] md:right-[20%] md:text-xl text-white font-bold">
-      <span>Thời hạn ưu đãi còn: </span>
+    <div className="absolute bottom-[27%] right-[5%] text-sm md:bottom-[15%] md:right-[20%] md:text-xl text-white font-bold">
+      <span className="text-md">Thời hạn ưu đãi còn: </span>
       <Countdown date={Date.now() + 43200000} renderer={renderer} />
       {/* <span>
         {+hours + +minutes + +seconds >= 0

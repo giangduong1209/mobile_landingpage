@@ -86,6 +86,23 @@ const FormPlan = () => {
               control={form.control}
               name="plan"
               render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Gói cần gắn:</FormLabel>
+                  <FormControl>
+                    <Input
+                      placeholder="Gói cần gắn"
+                      {...field}
+                      onChange={field.onChange}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            {/* <FormField
+              control={form.control}
+              name="plan"
+              render={({ field }) => (
                 <FormItem className="space-y-3">
                   <FormLabel>Gói cần gắn:</FormLabel>
                   <FormControl>
@@ -128,7 +145,7 @@ const FormPlan = () => {
                   </FormControl>
                 </FormItem>
               )}
-            />
+            /> */}
           </FormProvider>
           <Button type="submit">Đăng ký</Button>
         </form>
