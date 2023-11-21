@@ -18,6 +18,13 @@ const FormPlan = () => {
   const form = useForm();
   function onSubmit(data: any) {
     console.log(data);
+    fetch("/api/contact", {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
   }
   return (
     <div className="mt-10 mb-14 mx-2 md:mx-[100px] lg:mx-[350px]">
@@ -77,7 +84,7 @@ const FormPlan = () => {
             />
             <FormField
               control={form.control}
-              name="Gói"
+              name="plan"
               render={({ field }) => (
                 <FormItem className="space-y-3">
                   <FormLabel>Gói cần gắn:</FormLabel>

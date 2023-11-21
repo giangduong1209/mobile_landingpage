@@ -1,11 +1,18 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import CountdownUi from "@/components/CountdownUi";
 import FormPlan from "@/components/FormPlan";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
   return (
     <>
       <header className="sticky h-24 md:h-16 inset-x-0 top-0 z-30 w-ful bg-white/75 backdrop-blur-lg transition-all mb-14">
@@ -98,7 +105,7 @@ export default function Home() {
             alt="banner 2"
             className="mx-auto"
           />
-          {/* <CountdownUi /> */}
+          {isClient && <CountdownUi />}
           <Link
             href="#register"
             className="block w-full text-center mt-10 font-semibold text-red-600 text-3xl"
