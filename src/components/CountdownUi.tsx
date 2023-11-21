@@ -7,7 +7,6 @@ const CountdownUi = () => {
   // const DISCOUNT_DAYS = new Date("2023-12-31");
   // const [hours, minutes, seconds] = useCountdown<Date>(DISCOUNT_DAYS);
   const renderer = ({ hours, minutes, seconds, completed }: any) => {
-    console.log("first");
     if (completed) {
       // Render a completed state
       return <Countdown date={Date.now() + 43200000} renderer={renderer} />;
@@ -24,7 +23,7 @@ const CountdownUi = () => {
   };
 
   return (
-    <div className="absolute bottom-[27%] right-[5%] text-sm md:bottom-[15%] md:right-[20%] md:text-xl text-white font-bold">
+    <div className="absolute bottom-[30%] right-[5%] text-sm md:bottom-[15%] md:right-[20%] md:text-xl text-white font-bold">
       <span className="text-md">Thời hạn ưu đãi còn: </span>
       <Countdown date={Date.now() + 43200000} renderer={renderer} />
       {/* <span>

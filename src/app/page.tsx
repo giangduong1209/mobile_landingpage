@@ -15,9 +15,9 @@ export default function Home() {
   }, []);
   return (
     <>
-      <header className="sticky h-24 md:h-16 inset-x-0 top-0 z-30 w-ful bg-white/75 backdrop-blur-lg transition-all mb-14">
+      <header className="sticky h-16 md:h-16 inset-x-0 top-0 z-30 w-ful bg-white/75 backdrop-blur-lg transition-all mb-10">
         <div className="flex p-4 justify-between items-center">
-          <h1 className="text-2xl">Viễn Thông ZinZin</h1>
+          <h1 className="text-lg md:text-2xl">Viễn Thông ZinZin</h1>
           <Button className="sm:text-md tracking-wide">
             Hotline: 0877.358.999
           </Button>
@@ -25,7 +25,7 @@ export default function Home() {
       </header>
       <main>
         <div className="mb-4 px-4 2xl:px-96">
-          <h1 className="text-4xl text-center font-bold md:text-7xl bg-yellow-400 p-2 rounded-md shadow-lg">
+          <h1 className="text-2xl text-center font-bold md:text-7xl bg-yellow-400 p-2 rounded-md shadow-lg">
             Gắn gói trực tiếp trên <br />{" "}
             <span className="text-blue-700 font-semibold">
               Sim Mobifone đang dùng
@@ -33,42 +33,52 @@ export default function Home() {
           </h1>
         </div>
         {/* Feature */}
-        <div className="flex flex-col justify-center items-center px-2 gap-5">
-          <div className="w-full flex justify-center gap-x-5">
+        <div className="flex flex-col justify-center items-center gap-2">
+          <div className="w-full flex justify-center gap-x-2">
             <div className="flex w-[250px] md:w-[300px] items-center">
-              <CheckCircle className="text-green-600 mr-2 md:w-14 h-20" />
-              <span className="text-red-600 text-md md:text-lg uppercase">
-                Không cần <br />
-                <span className="text-blue-600">mua sim 4G</span>
-              </span>
+              <CheckCircle className="text-green-600 mr-2 w-5 md:w-14 h-20" />
+              <div className="md:text-lg uppercase">
+                <p className="text-red-600 text-sm md:text-md">Không cần</p>
+                <span className="text-blue-600 text-xs md:text-sm">
+                  mua sim 4G
+                </span>
+              </div>
             </div>
             <div className="flex w-[250px] md:w-[300px] items-center">
-              <CheckCircle className="text-green-600 mr-2 md:w-14 h-20" />
-              <span className="text-red-600 uppercase text-md md:text-lg">
-                Gắn trực tiếp trên <br />{" "}
-                <span className="text-blue-600">sim đang dùng</span>
-              </span>
+              <CheckCircle className="text-green-600 mr-2 w-5 md:w-14 h-20" />
+              <div className="uppercase md:text-lg">
+                <p className="text-red-600 text-sm md:text-md">
+                  Gắn trực tiếp trên
+                </p>
+                <span className="text-blue-600 text-xs md:text-sm">
+                  sim đang dùng
+                </span>
+              </div>
             </div>
           </div>
-          <div className="w-full flex justify-center gap-x-5">
+          <div className="w-full flex justify-center gap-x-2">
             <div className="flex w-[250px] md:w-[300px] items-center">
-              <CheckCircle className="text-green-600 mr-2 md:w-14 h-20" />
-              <span className="text-red-600 uppercase text-md md:text-lg">
-                Nhanh chóng <br />{" "}
-                <span className="text-blue-600">(chỉ 5 phút gắn xong)</span>
-              </span>
+              <CheckCircle className="text-green-600 mr-2 w-5 md:w-14 h-20" />
+              <div className="uppercase md:text-lg">
+                <p className="text-red-600 text-sm md:text-md">Nhanh chóng</p>
+                <span className="text-blue-600 text-xs md:text-sm">
+                  (chỉ 5 phút gắn xong)
+                </span>
+              </div>
             </div>
             <div className="flex w-[250px] md:w-[300px] items-center">
-              <CheckCircle className="text-green-600 mr-2 md:w-14 h-20" />
-              <span className="text-red-600 uppercase text-md md:text-lg">
-                Dễ dàng <br />{" "}
-                <span className="text-blue-600">(90% sim mobi gắn được)</span>
-              </span>
+              <CheckCircle className="text-green-600 mr-2 w-5 md:w-14 h-20" />
+              <div className="uppercase text-md md:text-lg">
+                <p className="text-red-600 text-sm md:text-md">Dễ dàng</p>
+                <span className="text-blue-600 text-xs md:text-sm">
+                  (90% sim mobi gắn được)
+                </span>
+              </div>
             </div>
           </div>
         </div>
         {/* banner image */}
-        <div className="my-14">
+        <div className="my-10">
           <Image
             src="/banner_1.jpg"
             width={1198}
@@ -86,8 +96,11 @@ export default function Home() {
         </div>
         {/* Price plan */}
         <div>
-          <h2 className="text-center font-bold text-5xl">Các gói cước gắn</h2>
+          <h2 className="text-center font-bold text-4xl md:text-5xl">
+            Các gói cước gắn
+          </h2>
           <div className="flex flex-col justify-center items-center gap-5 md:flex-row mt-10 mb-14">
+            {/* Hình ảnh gói cước tại đây */}
             <Image
               src="/price_plan.jpg"
               width={778}
@@ -122,14 +135,16 @@ export default function Home() {
 
         {/* Contact info */}
         <div id="register">
-          <h2 className="text-center font-bold text-5xl">
+          <h2 className="text-center font-bold text-4xl md:text-5xl">
             Thông tin đăng ký gắn gói
           </h2>
           <FormPlan />
         </div>
       </main>
       <footer>
-        <h2 className="text-center font-bold text-5xl">Về chúng tôi</h2>
+        <h2 className="text-center font-bold text-4xl md:text-5xl">
+          Về chúng tôi
+        </h2>
         <p className="text-center my-5">
           ZinZin Shop chuyên cung cấp dịch vụ viễn thông Viettel, Vinaphone,
           Mobifone.
