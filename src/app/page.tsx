@@ -17,7 +17,7 @@ export default function Home() {
     <>
       <header className="sticky h-16 md:h-16 inset-x-0 top-0 z-30 w-ful bg-white/75 backdrop-blur-lg transition-all mb-10">
         <div className="flex p-4 justify-between items-center">
-          <h1 className="text-lg md:text-2xl">Viễn Thông ZinZin</h1>
+          <h1 className="text-md md:text-2xl">Viễn Thông ZinZin</h1>
           <Button className="sm:text-md tracking-wide">
             Hotline: 0877.358.999
           </Button>
@@ -38,8 +38,8 @@ export default function Home() {
             <div className="flex w-[250px] md:w-[300px] items-center">
               <CheckCircle className="text-green-600 mr-2 w-5 md:w-14 h-20" />
               <div className="md:text-lg uppercase">
-                <p className="text-red-600 text-sm md:text-md">Không cần</p>
-                <span className="text-blue-600 text-xs md:text-sm">
+                <p className="text-red-600 text-xs md:text-md">Không cần</p>
+                <span className="text-blue-600 text-[10px] md:text-sm">
                   mua sim 4G
                 </span>
               </div>
@@ -47,10 +47,10 @@ export default function Home() {
             <div className="flex w-[250px] md:w-[300px] items-center">
               <CheckCircle className="text-green-600 mr-2 w-5 md:w-14 h-20" />
               <div className="uppercase md:text-lg">
-                <p className="text-red-600 text-sm md:text-md">
+                <p className="text-red-600 text-xs md:text-md">
                   Gắn trực tiếp trên
                 </p>
-                <span className="text-blue-600 text-xs md:text-sm">
+                <span className="text-blue-600 text-[10px] md:text-sm">
                   sim đang dùng
                 </span>
               </div>
@@ -60,8 +60,8 @@ export default function Home() {
             <div className="flex w-[250px] md:w-[300px] items-center">
               <CheckCircle className="text-green-600 mr-2 w-5 md:w-14 h-20" />
               <div className="uppercase md:text-lg">
-                <p className="text-red-600 text-sm md:text-md">Nhanh chóng</p>
-                <span className="text-blue-600 text-xs md:text-sm">
+                <p className="text-red-600 text-xs md:text-md">Nhanh chóng</p>
+                <span className="text-blue-600 text-[10px] md:text-sm">
                   (chỉ 5 phút gắn xong)
                 </span>
               </div>
@@ -69,8 +69,8 @@ export default function Home() {
             <div className="flex w-[250px] md:w-[300px] items-center">
               <CheckCircle className="text-green-600 mr-2 w-5 md:w-14 h-20" />
               <div className="uppercase text-md md:text-lg">
-                <p className="text-red-600 text-sm md:text-md">Dễ dàng</p>
-                <span className="text-blue-600 text-xs md:text-sm">
+                <p className="text-red-600 text-xs md:text-md">Dễ dàng</p>
+                <span className="text-blue-600 text-[10px] md:text-sm">
                   (90% sim mobi gắn được)
                 </span>
               </div>
