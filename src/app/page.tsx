@@ -37,7 +37,7 @@ export default function Home() {
           <div className="w-full flex justify-center gap-x-2">
             <div className="flex w-[250px] md:w-[300px] items-center">
               <CheckCircle className="text-green-600 mr-2 w-5 md:w-14 h-20" />
-              <div className="md:text-lg uppercase">
+              <div className="md:text-lg uppercase font-bold">
                 <p className="text-red-600 text-md md:text-md">Không cần</p>
                 <span className="text-blue-600 text-[10px] md:text-sm">
                   mua sim 4G
@@ -46,7 +46,7 @@ export default function Home() {
             </div>
             <div className="flex w-[250px] md:w-[300px] items-center">
               <CheckCircle className="text-green-600 mr-2 w-5 md:w-14 h-20" />
-              <div className="uppercase md:text-lg">
+              <div className="uppercase md:text-lg font-bold">
                 <p className="text-red-600 text-md md:text-md">Gắn trực tiếp</p>
                 <span className="text-blue-600 text-[10px] md:text-sm">
                   trên sim đang dùng
@@ -57,7 +57,7 @@ export default function Home() {
           <div className="w-full flex justify-center gap-x-2">
             <div className="flex w-[250px] md:w-[300px] items-center">
               <CheckCircle className="text-green-600 mr-2 w-5 md:w-14 h-20" />
-              <div className="uppercase md:text-lg">
+              <div className="uppercase md:text-lg font-bold">
                 <p className="text-red-600 text-md md:text-md">Nhanh chóng</p>
                 <span className="text-blue-600 text-[10px] md:text-sm">
                   (chỉ 5 phút gắn xong)
@@ -66,7 +66,7 @@ export default function Home() {
             </div>
             <div className="flex w-[250px] md:w-[300px] items-center">
               <CheckCircle className="text-green-600 mr-2 w-5 md:w-14 h-20" />
-              <div className="uppercase text-md md:text-lg">
+              <div className="uppercase text-md md:text-lg font-bold">
                 <p className="text-red-600 text-md md:text-md">Dễ dàng</p>
                 <span className="text-blue-600 text-[10px] md:text-sm">
                   (90% sim mobi gắn được)
