@@ -133,7 +133,7 @@ export default function Home() {
 
         {/* Contact info */}
         <div id="register">
-          <h2 className="text-center font-bold text-4xl md:text-5xl">
+          <h2 className="text-center font-bold text-2xl md:text-5xl">
             Thông tin đăng ký gắn gói
           </h2>
           <FormPlan />
