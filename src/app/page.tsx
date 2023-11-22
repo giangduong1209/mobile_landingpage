@@ -25,7 +25,7 @@ export default function Home() {
       </header>
       <main>
         <div className="mb-4 px-4 2xl:px-96">
-          <h1 className="text-2xl text-center font-bold md:text-7xl bg-yellow-400 p-2 rounded-md shadow-lg">
+          <h1 className="text-xl text-center font-bold md:text-7xl bg-yellow-400 p-2 rounded-md shadow-lg uppercase">
             Gắn gói trực tiếp trên <br />{" "}
             <span className="text-blue-700 font-semibold">
               Sim Mobifone đang dùng
@@ -38,8 +38,8 @@ export default function Home() {
             <div className="flex w-[250px] md:w-[300px] items-center">
               <CheckCircle className="text-green-600 mr-2 w-5 md:w-14 h-20" />
               <div className="md:text-lg uppercase">
-                <p className="text-red-600 text-xs md:text-md">Không cần</p>
-                <span className="text-blue-600 text-[10px] md:text-sm">
+                <p className="text-red-600 text-md md:text-md">Không cần</p>
+                <span className="text-blue-600 text-[11.2px] md:text-sm">
                   mua sim 4G
                 </span>
               </div>
@@ -47,11 +47,9 @@ export default function Home() {
             <div className="flex w-[250px] md:w-[300px] items-center">
               <CheckCircle className="text-green-600 mr-2 w-5 md:w-14 h-20" />
               <div className="uppercase md:text-lg">
-                <p className="text-red-600 text-xs md:text-md">
-                  Gắn trực tiếp trên
-                </p>
-                <span className="text-blue-600 text-[10px] md:text-sm">
-                  sim đang dùng
+                <p className="text-red-600 text-md md:text-md">Gắn trực tiếp</p>
+                <span className="text-blue-600 text-[11.2px] md:text-sm">
+                  trên sim đang dùng
                 </span>
               </div>
             </div>
@@ -60,8 +58,8 @@ export default function Home() {
             <div className="flex w-[250px] md:w-[300px] items-center">
               <CheckCircle className="text-green-600 mr-2 w-5 md:w-14 h-20" />
               <div className="uppercase md:text-lg">
-                <p className="text-red-600 text-xs md:text-md">Nhanh chóng</p>
-                <span className="text-blue-600 text-[10px] md:text-sm">
+                <p className="text-red-600 text-md md:text-md">Nhanh chóng</p>
+                <span className="text-blue-600 text-[11.2px] md:text-sm">
                   (chỉ 5 phút gắn xong)
                 </span>
               </div>
@@ -69,8 +67,8 @@ export default function Home() {
             <div className="flex w-[250px] md:w-[300px] items-center">
               <CheckCircle className="text-green-600 mr-2 w-5 md:w-14 h-20" />
               <div className="uppercase text-md md:text-lg">
-                <p className="text-red-600 text-xs md:text-md">Dễ dàng</p>
-                <span className="text-blue-600 text-[10px] md:text-sm">
+                <p className="text-red-600 text-md md:text-md">Dễ dàng</p>
+                <span className="text-blue-600 text-[11.2px] md:text-sm">
                   (90% sim mobi gắn được)
                 </span>
               </div>
